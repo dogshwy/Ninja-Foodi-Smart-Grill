@@ -15,10 +15,10 @@
         * {margin: 0;padding: 0;box-sizing: border-box;}
         body {font-family: 'Amazon Ember', Arial, sans-serif;background-color: #f3f3f3;padding: 20px;}
         .header {background-color: white;padding: 15px 20px;margin-bottom: 20px;border-bottom: 1px solid #ddd;}
-        .header-content {max-width: 1500px;margin: 0 auto;display: flex;align-items: center;justify-content: center;gap: 20px;}
-        .brand-name {font-size: 28px;font-weight: 700;color: #0F1111;}
+        .header-content {max-width: 1500px;margin: 0 auto;display: flex;align-items: center;justify-content: space-between;gap: 20px;}
+        .brand-name {font-size: 28px;font-weight: 700;color: #0F1111;position: absolute;left: 50%;transform: translateX(-50%);}
         .nav-menu {display: flex;gap: 25px;margin-left: auto;}
-        .nav-menu a {text-decoration: none;color: #0F1111;font-size: 14px;font-weight: 600;}
+        .nav-menu a {text-decoration: none;color: #0F1111;font-size: 18px;font-weight: 600;}
         .products-container {max-width: 1500px;margin: 0 auto;display: grid;grid-template-columns: repeat(4, 1fr);gap: 20px;padding: 20px 0;}
         .rating-container {display: flex;align-items: center;gap: 8px;margin-bottom: 8px;min-height: 20px;}
         .stars {color: #FFA41C;font-size: 18px;}
@@ -55,7 +55,7 @@
 <body>
     <div class="header">
         <div class="header-content">
-            <div class="brand-name">Ninja Foodi Smart Grill</div>
+            <a href="https://www.amazon.com/stores/page/AF56B75B-DEA9-4270-94C6-DCEC3FF922D4?ingress=2&lp_context_asin=B0B3S5GWX7&lp_context_query=ninja+foodi+smart+xl+grill&visitId=07bbb907-415e-4e5b-869e-e13c67d28ab5&store_ref=bl_ast_dp_brandlogo_sto&linkCode=ll2&tag=productreviews25-20&linkId=4114713168ef4f0ef26120d1660f842b&language=en_US&ref_=as_li_ss_tl" target="_blank" class="brand-name">Ninja Foodi Smart Grill</a>
             <div class="nav-menu">
                 <a href="https://www.amazon.com/stores/page/AF56B75B-DEA9-4270-94C6-DCEC3FF922D4?ingress=2&lp_context_asin=B0B3S5GWX7&lp_context_query=ninja+foodi+smart+xl+grill&visitId=07bbb907-415e-4e5b-869e-e13c67d28ab5&store_ref=bl_ast_dp_brandlogo_sto&linkCode=ll2&tag=productreviews25-20&linkId=4114713168ef4f0ef26120d1660f842b&language=en_US&ref_=as_li_ss_tl" target="_blank">See all Smart Grills</a>
             </div>
@@ -174,6 +174,7 @@
 
     <div class="products-container">
         <div class="product-card">
+            <span class="product-badge">#1 Top Rated</span>
             <div class="product-image-container">
                 <a href="https://www.amazon.com/Ninja-Dehydrate-Indoor-Electric-AG301/dp/B07S76WBGF?dib=eyJ2IjoiMSJ9.85t2hVVLLr5e56nU1w2-r_rWy64BfBfIMTI4xoW5dxqW2_STPz5VaSXlAWYMpDg-XPKErhDUCzZo0Lv8lPkHyzSyUdbhqWx7XfVtHq0HHeAPyQBdppYV7uc0fanRpoj9yXa4MaqetycG4mTi17WPrnYpNe_sqBnzB4234pt_eIbsFfCmziQuVmMcMuy3SSQhLMh8w5gnjEQorlcGdjFQavIISolkNO71Zd9tXS9PBmY.PiYNqYSdk-UiMAXMOnLvXUlSaNfKsjvjcvqlBwYsrRg&dib_tag=se&keywords=ninja%2Bfoodi%2Bsmart%2Bxl%2Bgrill&qid=1773624139&s=kitchen&sr=1-9&th=1&linkCode=ll2&tag=productreviews25-20&linkId=f90d820d57d2461e4c3c1739401e539f&language=en_US&ref_=as_li_ss_tl" target="_blank">
                     <img src="https://m.media-amazon.com/images/I/71pesv1jI9L._AC_SL1500_.jpg" alt="Ninja Indoor Grill AG301" class="product-image">
@@ -265,7 +266,36 @@
 
     <div class="content-section">
         <h2>Why Choose a Ninja Foodi Smart Grill?</h2>
-        <p>Content section text goes here.</p>
+        
+        <div class="faq-item">
+            <h3>Q: Does it really taste like an outdoor grill?</h3>
+            <p>A: Yes. Unlike traditional indoor grills that simply "warm" food, the Ninja Foodi reaches 500°F, creating authentic char-grilled marks and searing in juices. It's like having a high-end steakhouse broiler on your kitchen counter.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Will it set off my smoke alarm?</h3>
+            <p>A: No. The Ninja is designed with a Smoke Control System featuring a temperature-controlled grill plate, a splatter shield, and a cool-air zone. It's virtually smokeless, meaning you can grill a ribeye in your kitchen while your family watches TV in the next room.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: How "smart" is the Smart Cook System?</h3>
+            <p>A: It's like having a professional chef standing over the grill for you. You simply insert the Smart Thermometer, select your protein, and choose your doneness (Rare to Well). The grill monitors the internal temperature and shuts off the moment your meal is perfect—zero guesswork required.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Is it a nightmare to clean?</h3>
+            <p>A: Not at all. The grill grate, crisper basket, and cooking pot are all ceramic-coated and non-stick. Most importantly, every removable part is dishwasher safe, so you can enjoy your meal without dreading the cleanup.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Q: Can it actually replace my air fryer and oven?</h3>
+            <p>A: It's a true multi-cooker. Because it uses high-velocity cyclonic air, it air-frys with up to 75% less fat than deep frying. It also roasts, bakes, and dehydrates, making it the ultimate space-saver for smaller kitchens or apartments.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Why Settle for a Basic Grill?</h3>
+            <p>Most indoor grills are like flip phones—they do one thing, but they’re limited. Upgrading to a Ninja Foodi Smart Grill is like switching to a Smartphone. It doesn't just grill; it manages your entire meal, eliminates the guesswork, and replaces a counter full of cluttered gadgets with one sleek, "do-it-all" powerhouse.</p>
+        </div>
     </div>
 
     <footer>
